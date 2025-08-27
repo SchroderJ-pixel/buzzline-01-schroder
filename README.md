@@ -1,78 +1,68 @@
-# buzzline-01-case
+# buzzline-01-schroder
+
+**Course:** Streaming Data  
+**Project by:** Justin Schroder  
+**Date:** August 27, 2025  
+**GitHub:** [github.com/SchroderJ-pixel](https://github.com/SchroderJ-pixel)
 
 ![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 
-This project introduces streaming data. 
-The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
-As the code runs, it will continuously update the log file. 
-We'll use a consumer to monitor the log file and alert us when a special message is detected. 
+---
 
-## Task 1. Set Up Your Machine & Sign up for GitHub
+## 📌 Project Overview
+This project demonstrates **streaming analytics in Python**.  
+It uses generators to emit continuous social media–style comments (my custom theme is Taylor Swift getting engaged),  
+and a consumer that watches the log file in real time for alerts, keyword matches, and summaries.
 
-We practice professional Python. In each course that uses Python, we use a standard set of popular professional tools. 
-This course uses advanced tools such as Apache Kafka that requires **Python 3.11**. 
-You are encouraged to install and practice with multiple versions. 
-If space is an issue, we only need Python 3.11 for this course. 
+## Task 1. Set Up Your Machine & GitHub
 
-Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 1: Set Up Machine & Sign up for GitHub**.
+This course requires **Python 3.11**.  
+Make sure it’s installed on your system (other versions may not work with the tools we’ll use later, like Kafka).  
+If you already have multiple versions of Python, that’s fine — just make sure you can switch between them when needed.  
 
-**Setup is critical.** Follow all steps exactly and verify success before proceeding.  
-Missing or incomplete setup steps can make the course impossible to complete.
+Also create a **GitHub account** (mine is [github.com/SchroderJ-pixel](https://github.com/SchroderJ-pixel)) if you don’t already have one.  
+We’ll use GitHub throughout the course to store and share projects.  
 
-## Task 2. Initialize a Project
+⚠️ Setup is critical — missing or incomplete steps here will block the rest of the project. Double-check before moving on.  
 
-Once your machine is ready, you'll copy this template repository into your own GitHub account  
-and create your personal version of the project to run and explore. 
-Name it **buzzline-01-yourname** (replace `yourname` with something unique to you).  
+---
 
-Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 2: Initialize a Project**.
-This will get your project stored safely in the cloud - and ready for work on your machine. 
+## Task 2. Initialize Your Project
 
-## Task 3. Generate Streaming Data (Terminal 1)
+1. Copy this template repository into your own GitHub account.  
+2. Name your repo: **buzzline-01-schroder** (replace with your own name if you’re not me).  
+3. Clone it down to your local machine.  
+4. Create and activate a virtual environment in the root of the project.  
 
-Now we'll generate some streaming data. 
-By the way - you've done 90% of the hard work before we even look at code. 
-Congratulations!
+   **Windows PowerShell**
+   ```shell
+   py -3.11 -m venv .venv
+   .venv\Scripts\activate
 
-In VS Code, open a terminal.
-Use the commands below to activate .venv, and run the generator as a module. 
-To learn more about why we run our Python file as a module, see [PYTHON-PKG-IMPORTS](docs/PYTHON-PKG-IMPORTS.md) 
+## Task 3. Run the Producer (Terminal 1)
 
-Windows PowerShell:
+Time to generate streaming data.  
+My producer is customized to create **Taylor Swift engagement comments** that get written to the project log file every few seconds.  
 
+Open a terminal in VS Code, activate your `.venv`, and run:
+
+**Windows**
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_producer_case
+py -m producers.basic_producer_schroder
 ```
+## Task 4. Run the Consumer (Terminal 2)
 
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m producers.basic_producer_case
-```
+Next, we’ll monitor the log file in real time.  
+The consumer reads new comments as they are written, raises alerts, and tracks keyword mentions.  
 
-## Task 4. Monitor an Active Log File (Terminal 2)
+Open a **new terminal** in VS Code, activate your `.venv`, and run:
 
-A common streaming task is monitoring a log file as it is being written. 
-This project has a consumer that reads and processes our own log file as log messages arrive. 
-
-In VS Code, open a NEW terminal in your root project folder. 
-Use the commands below to activate .venv, and run the file as a module. 
-
-Windows:
+**Windows**
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_consumer_case
+py -m consumers.basic_consumer_schroder
 ```
-
-Mac/Linux:
-```zsh
-source .venv/bin/activate
-python3 -m consumers.basic_consumer_case
-```
-
-## How to Stop the Processes
-Stop a continuous process (kill it) by selecting the terminal and hitting CTRL+c (press CTRL key and c key at the same time). 
 
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
