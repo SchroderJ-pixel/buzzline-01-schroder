@@ -1,0 +1,28 @@
+2025-08-27 17:11:34.049 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-08-27 17:11:34.051 | INFO     | __main__:main:79 - START producer (schroder)...
+2025-08-27 17:11:34.051 | INFO     | __main__:main:80 - Hit CTRL+C to stop.
+2025-08-27 17:11:34.051 | INFO     | __main__:main:83 - Messages will be sent every 3 seconds.
+2025-08-27 17:11:34.051 | INFO     | __main__:main:86 - Bet this inspires 3 new albums
+2025-08-27 17:11:37.052 | INFO     | __main__:main:86 - Will we get ‘Love Story (Engaged Version)’?
+2025-08-27 17:11:40.058 | INFO     | __main__:main:86 - This feels too sudden… anyone else?
+2025-08-27 17:11:43.060 | INFO     | __main__:main:86 - Is this really true?
+2025-08-27 17:11:46.060 | INFO     | __main__:main:86 - Hope the media doesn’t ruin this moment
+2025-08-27 17:11:49.061 | INFO     | __main__:main:86 - Engagement era is here!!!
+2025-08-27 17:11:52.062 | INFO     | __main__:main:86 - So happy for Taylor and her fiancé
+2025-08-27 17:11:55.062 | INFO     | __main__:main:86 - SCHRODER_ALERT: Viral comment spike detected at seq=8
+2025-08-27 17:11:58.063 | INFO     | __main__:main:86 - I didn’t see this coming
+2025-08-27 17:12:01.063 | INFO     | __main__:main:86 - This is iconic—Taylor deserves the world
+2025-08-27 17:12:04.064 | INFO     | __main__:main:86 - So happy for Taylor and her fiancé
+2025-08-27 17:12:07.065 | INFO     | __main__:main:86 - This is iconic—Taylor deserves the world
+2025-08-27 17:13:19.106 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-08-27 17:13:19.106 | INFO     | __main__:main:68 - START...
+2025-08-27 17:13:19.106 | INFO     | __main__:main:74 - Reading file located at logs\project_log.log.
+2025-08-27 17:13:34.090 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-08-27 17:13:34.091 | INFO     | __main__:main:79 - START producer (schroder)...
+2025-08-27 17:13:34.091 | INFO     | __main__:main:80 - Hit CTRL+C to stop.
+2025-08-27 17:13:34.091 | INFO     | __main__:main:83 - Messages will be sent every 3 seconds.
+2025-08-27 17:13:34.091 | INFO     | __main__:main:86 - Bet this inspires 3 new albums
+2025-08-27 17:13:37.092 | INFO     | __main__:main:86 - This feels too sudden… anyone else?
+2025-08-27 17:13:40.092 | INFO     | __main__:main:86 - This feels too sudden… anyone else?
+2025-08-27 17:13:43.093 | INFO     | __main__:main:86 - I didn’t see this coming
+2025-08-27 17:13:48.661 | INFO     | __main__:main:85 - END.....
